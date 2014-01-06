@@ -29,7 +29,7 @@ window.onload = function() {
     }
 
     setInterval(function() {
-        ctx.fillStyle = '#abf';//'rgba(80, 90, 109)';
+        ctx.fillStyle = '#1a1a1a';
         ctx.fillRect(0, 0, w, h);
         a += 0.07;
         b += 0.03;
@@ -58,13 +58,9 @@ window.onload = function() {
                     - cosa*costheta*sinphi
                     - sina*sintheta
                     + cosb*(cosa*sintheta - costheta*sina*sinphi));
-                /*if(lum > 0) {
-                    ctx.fillStyle = 'rgba(255,255,255,' + lum + ')';
-                    ctx.fillRect(sx, sy, 1.5, 1.5);
-                }*/
                 if(loadedImages < images.length) {
                     ctx.fillStyle = '#fff';
-                    ctx.fillRect(sx, sy, 1.5, 1.5);
+                    ctx.fillRect(sx, sy, 3, 3);
                 } else {
                     var image = images[i % images.length];
                     ctx.drawImage(image, sx - image.width/2, sy - image.height/2);

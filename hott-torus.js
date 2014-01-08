@@ -37,12 +37,12 @@ window.onload = function() {
         var sinb = Math.sin(b);
         var cosa = Math.cos(a);
         var cosb = Math.cos(b);
-        var twopi = 2 * Math.PI;
+        var tau = 2 * Math.PI;
         var i = 0;
-        for(var theta = 0; theta < twopi; theta += 0.63) {
+        for(var theta = 0; theta < tau; theta += 0.63) {
             var sintheta = Math.sin(theta);
             var costheta = Math.cos(theta);
-            for(var phi = 0; phi < twopi; phi += 0.315) {
+            for(var phi = 0; phi < tau; phi += 0.315) {
                 var sinphi = Math.sin(phi);
                 var cosphi = Math.cos(phi);
                 var objx = costheta*r1 + r2;
@@ -68,5 +68,5 @@ window.onload = function() {
                 i++;
             }
         }
-    }, 50);
+    }, 33);
 }
